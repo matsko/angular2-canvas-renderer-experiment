@@ -2,6 +2,10 @@
 
 Can an angular2 renderer render HTML into canvas output?
 
+# NOTE: EXPERIMENTAL
+
+This is just a proof of concept to showcase the upcoming rendering capabilites of Angular2.
+
 ## install
 1. install NodeJS, NPM. Then install typescript, typings and http-server (via npm)
 1. npm install
