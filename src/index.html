@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Angular2RenderTesting</title>
+  <base href=".">
+  <script src="../node_modules/angular2/bundles/angular2-polyfills.js"></script>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    canvas { width:90%;
+             height:600px;
+             border:5px solid black; }
+  </style>
+</head>
+<body>
+  <angular2-render-testing-app>Loading...</angular2-render-testing-app>
+
+  <script src="../node_modules/systemjs/dist/system.src.js"></script>
+  <script src="../node_modules/rxjs/bundles/Rx.js"></script>
+  <script src="../node_modules/angular2/bundles/angular2.dev.js"></script>
+  <script src="../node_modules/angular2/bundles/http.dev.js"></script>
+  <script src="../node_modules/angular2/bundles/router.dev.js"></script>
+  <script>
+    System.config({
+      packages: {
+        app: {
+          format: 'register',
+          defaultExtension: 'js'
+        }
+      }
+    });
+    System.import('app.js').then(null, console.error.bind(console));
+  </script>
+</body>
+</html>
